@@ -1,0 +1,96 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  
+}
+body{
+    font-family: Verdana;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+section{
+  position: relative;
+  border: 1px solid black;
+  margin: 1%;
+  right: 1%;
+  margin-bottom: 3%;
+  background-color: gray;
+}
+article{
+  padding: 10%;
+  padding-top: 25%;
+  font-size: 1.25em;
+}
+#t1{
+  background-color: pink;
+  color: black;
+}
+#t2{
+  background-color: brown;
+  color: white;
+}
+#t3{
+  background-color: yellow;
+  color: black;
+}
+header {
+  position: absolute;
+  text-align: center;
+  border: 1px solid black;  
+  width: 45%;
+  right: 0%;
+  font-size: 1.75em;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media screen and (min-width: 992px) { 
+  section{
+    width: 30%;
+    float: left;
+  }
+  #s2 {
+    top: 0%;
+  }
+}
+
+/********** Medium devices only **********/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #s1 {
+    float: left;
+    width: 47%;
+  }
+  #s2 {
+    float: right;
+    width: 47%;
+    top: 0%;
+  }
+  #s3 {
+    clear: both;
+    width: 100%;
+  }
+}
+
+/********** Phone only **********/
+@media (max-width: 767px) {
+  section{
+    width: 100%;
+    float: left;
+  }   
+   #s1 {
+    float: left;
+  }
+  #s2 {
+    clear: both;
+  }
+  #s3 {
+    clear: both;
+ }
+}
