@@ -2,7 +2,7 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
-  
+
 }
 body{
     font-family: Verdana;
@@ -43,7 +43,9 @@ header {
   width: 45%;
   right: 0%;
   font-size: 1.75em;
+
 }
+
 
 /* Simple Responsive Framework. */
 .row {
@@ -53,11 +55,14 @@ header {
 /********** Large devices only **********/
 @media screen and (min-width: 992px) { 
   section{
-    width: 30%;
     float: left;
+    width: 31%;
   }
   #s2 {
     top: 0%;
+  }
+  #s3 {
+    left: 1%;
   }
 }
 
@@ -70,6 +75,7 @@ header {
   #s2 {
     float: right;
     width: 47%;
+    left: 1%;
     top: 0%;
   }
   #s3 {
@@ -78,19 +84,26 @@ header {
   }
 }
 
-/********** Phone only **********/
+/********** Mobile devices only **********/
 @media (max-width: 767px) {
-  section{
-    width: 100%;
-    float: left;
-  }   
+   section{
+        font-size: 2vw;
+
+   }
    #s1 {
     float: left;
+    width: 100%;
   }
   #s2 {
     clear: both;
+    width: 100%;
   }
   #s3 {
     clear: both;
+    width: 100%;
  }
 }
+
+
+
+
