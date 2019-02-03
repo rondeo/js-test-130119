@@ -30,9 +30,6 @@ body {
   padding: 2%;
   border-bottom: 1px solid black;
 }
-.hrSmall{
-  color: black;
-}
 .navbar-brand {
   padding-top: 5px;
 
@@ -70,9 +67,7 @@ body {
 }
 .navbar-header{
   background-color: #f6b319;
-  position: fixed;!important;
-  top: 0%;
-  width: 100%;
+  
 }
 /* END HEADER */
 
@@ -103,9 +98,7 @@ body {
   }
   #collapsable-nav { /* Collapsed nav menu text */
        background-color: white;
-       position: fixed;!important;
-       top: 5%;
-       width: 100%;
+       
   }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
