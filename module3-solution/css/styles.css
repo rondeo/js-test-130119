@@ -12,8 +12,6 @@ body {
   overflow: hidden;
   width: 100%;
 }
-#main-content{
-}
 #s1{
   position: absolute;
   background-color: gray;
@@ -49,6 +47,7 @@ body {
 }
 
 #nav-list {
+
   background-color: white;
   margin-top: 10px;
 }
@@ -62,16 +61,11 @@ body {
   font-size: 1.8em;
 }
 
-
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  position: absolute;
-  top: 70%;
-  right: 0%;
   margin-top: -30px;
 }
 .navbar-header{
@@ -109,6 +103,9 @@ body {
   }
   #collapsable-nav { /* Collapsed nav menu text */
        background-color: white;
+       position: fixed;!important;
+       top: 5%;
+       width: 100%;
   }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -120,7 +117,9 @@ body {
 
   /* End Header */
 
-
+  /* Home Page */
+ 
 }
+
 
 
