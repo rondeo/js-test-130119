@@ -40,6 +40,7 @@ export class HomePage {
     }
     getTextOfFile(currentUrl:any){
       console.log("currentUrl= "+currentUrl);
+      currentUrl=currentUrl.replace("/private","file://");
       let path = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
       let file = currentUrl.substring(currentUrl.lastIndexOf('/')+1, currentUrl.length);
       console.log("currentUrl2= ");
