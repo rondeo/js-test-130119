@@ -905,7 +905,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\n    <mat-sidenav-container>\n        <mat-sidenav #sidenav role=\"navigation\">\n          <!--this is a place for us to add side-nav code-->\n        </mat-sidenav>\n        <mat-sidenav-content>\n            <mat-sidenav-content>\n                <app-header></app-header>\n                <main>\n                  <router-outlet></router-outlet>\n                </main>\n              </mat-sidenav-content>\n          <!--in here all the content must reside. We will add a navigation header as well-->\n          <main>\n            <router-outlet></router-outlet>\n          </main>\n        </mat-sidenav-content>\n      </mat-sidenav-container>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
+module.exports = "<ion-app>\n     <ion-router-outlet></ion-router-outlet>\n\n</ion-app>\n"
 
 /***/ }),
 

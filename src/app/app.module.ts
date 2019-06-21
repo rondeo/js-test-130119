@@ -14,9 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material';
 import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material';
 import { MatTabsModule, MatSidenavModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
-import { MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [AppComponent],

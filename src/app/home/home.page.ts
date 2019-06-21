@@ -4,6 +4,7 @@ import { File } from '@ionic-native/file/ngx';
 import {Platform} from '@ionic/angular';
 import { MatCardModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class HomePage {
   twoOrThreeFlag=0;
   str = "";//abc\ndef\nghi\njkl\nmno\npqr\nstu\nvwx\nyza";
-  linesArray=[];
+  linesArray:Array<String>=[];
   maxTextWidth=0;
 
   constructor(private filePicker: IOSFilePicker,
@@ -22,7 +23,7 @@ export class HomePage {
     platform: Platform
     ) {
       platform.ready().then((readySource) => {
-        this.maxTextWidth=768;//platform.width();
+        this.maxTextWidth=0.68*platform.width();
         
       });
 
@@ -49,7 +50,7 @@ export class HomePage {
       console.log("replaceBigItems= ");
       for(var i=0;i<this.linesArray.length;i++){
         var thisLine=this.linesArray[i];
-        if(this.getTextWidth(thisLine)>768){
+        if(this.getTextWidth(thisLine)>this.maxTextWidth){
             var thisLine1 = thisLine.slice(0, thisLine.length/2);
             var thisLine2 = thisLine.slice(thisLine.length/2);
             this.linesArray.splice(i,1);
