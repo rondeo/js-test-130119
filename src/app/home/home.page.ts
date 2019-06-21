@@ -3,6 +3,7 @@ import { IOSFilePicker } from '@ionic-native/file-picker/ngx';
 import { File } from '@ionic-native/file/ngx';
 import {Platform} from '@ionic/angular';
 import { MatCardModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
@@ -31,7 +32,7 @@ export class HomePage {
       currentUrl=currentUrl.replace("/private","file://");
       let path = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
       let file = currentUrl.substring(currentUrl.lastIndexOf('/')+1, currentUrl.length);
-      this.file.readAsBinaryString(path, file)
+      this.file.readAsText(path, file)
       .then(content=>{
         currentUrl=content+'';//JSON.stringify();
 

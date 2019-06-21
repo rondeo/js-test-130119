@@ -13,12 +13,19 @@ import { File } from '@ionic-native/file/ngx';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material';
 import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule, MatSidenavModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule,
     MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatTabsModule,
+    MatSidenavModule,
     BrowserAnimationsModule,
     IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -27,6 +34,12 @@ import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     IOSFilePicker,
     File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  exports: [
+    MatTabsModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatToolbarModule
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA,
