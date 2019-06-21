@@ -24,6 +24,40 @@
               RGB
           </button>
       </div>
+      <div style="left:50%">
+            <!-- <div class="col-sm-4">
+                <img src="images/box-dropbox1.jpg" class="img-responsive">
+            </div> -->
+            <hr/>
+            <div class="col-sm-8">
+                <div class="col-sm-4 center-block">
+                    <p><a class="btn btn-primary btn-block" href="javascript:;" one-drive-picker odpicker-files="odfiles">OneDrive Picker</a></p>
+                </div>
+                <!-- <div class="col-sm-4 center-block">
+                    <p><a class="btn btn-primary btn-block">Fork me</a></p>
+                </div> -->
+            </div>
+            <div class="container col-sm-12">
+                <div class="row show-grid" ng-switch="odfiles.length > 0">
+                    <div ng-switch-when="true">
+                        <div class="col-sm-4" ng-repeat="file in odfiles">
+                            <a href="{{ file.link }}" target="_blank"><img src="images/file1.png" class="img-responsive img-thumbnail"> {{ file.fileName }}</a>
+                            <button type="button" class="close" ng-click="remove($index)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://js.live.net/v5.0/OneDrive.js" id="onedrive-js" client-id="000000004417555F"></script>
+        <script src="app.js"></script>
+        <script src="onedrive-picker.js"></script>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -32,7 +66,7 @@
 <div id="spanText">spanText</div>
 <ion-card class="textEditor">
     <ion-card-content>
-      <div style="margin:10px">
+      <div style="margin:30px">
       <p *ngFor="let line of this.linesArray; let i = index">
 
         <span *ngIf="this.twoOrThreeFlag==0">
