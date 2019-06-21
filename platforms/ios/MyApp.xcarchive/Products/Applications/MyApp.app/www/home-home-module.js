@@ -57,7 +57,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div>\n  <button class=\"buttonOnTop\"\n  (click)=\"this.chooseFile()\"\n  >\n  <ion-icon name=\"open\"></ion-icon>\n</button>\n\n<button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRG()\"\n  >RG</button>\n\n  <button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRGB()\"\n  >RGB</button>\n  </div>\n\n  <textarea id=\"textArea\"\n  wrap=\"soft\"\n  rows=\"20\" \n  cols=\"20\" \n  class=\"textAreaClass\"> \n\n</textarea>\n<div id=\"spanText\">spanText</div>\n\n    \n<div >\n\n<p *ngFor=\"let line of this.linesArray; let i = index\">\n    \n    <span *ngIf=\"this.twoOrThreeFlag==0\">\n        {{line}} \n   </span>\n \n  \n  <span *ngIf=\"this.twoOrThreeFlag==1\" [ngSwitch]=\"(i+1)%2\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n    </span>\n\n\n\n\n\n    <span *ngIf=\"this.twoOrThreeFlag==2\" [ngSwitch]=\"(i+1)%3\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n          <span *ngSwitchCase=\"'2'\" style = \"color:blue\">  {{line}} \n            </span>\n    </span>\n</p>\n\n</div>\n\n</ion-content>\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<div class=\"container\"\n     fxLayout=\"column\"\n     fxLayoutGap=\"10px\">\n     \n     <div>\n  <button class=\"buttonOnTop\"\n  (click)=\"this.chooseFile()\"\n  >\n  <ion-icon name=\"open\"></ion-icon>\n</button>\n\n<button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRG()\"\n  >RG</button>\n\n  <button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRGB()\"\n  >RGB</button>\n  </div>\n\n<div id=\"spanText\">spanText</div>\n\n<div fxFlex >\n  <mat-card>\n    <mat-card-header>\n    </mat-card-header>\n    <mat-card-content>\n      <p>”HERE”\n      </p>\n    </mat-card-content>\n  </mat-card>\n</div>\n</div>\n\n\n<div >\n\n<p *ngFor=\"let line of this.linesArray; let i = index\">\n    \n    <span *ngIf=\"this.twoOrThreeFlag==0\">\n        {{line}} \n   </span>\n \n  \n  <span *ngIf=\"this.twoOrThreeFlag==1\" [ngSwitch]=\"(i+1)%2\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n    </span>\n\n\n\n\n\n    <span *ngIf=\"this.twoOrThreeFlag==2\" [ngSwitch]=\"(i+1)%3\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n          <span *ngSwitchCase=\"'2'\" style = \"color:blue\">  {{line}} \n            </span>\n    </span>\n</p>\n\n</div>\n\n</div>\n"
 
 /***/ }),
 
@@ -102,18 +102,7 @@ var HomePage = /** @class */ (function () {
         this.linesArray = [];
         this.maxTextWidth = 0;
         platform.ready().then(function (readySource) {
-            var textArea = document.getElementById("textArea");
-            //textArea.innerHTML='';
-            //textArea.style.width="768px";//platform.width()+"px";
-            //textArea.style.height="200px";//platform.height()+"px";
-            textArea.style.display = "none";
             _this.maxTextWidth = 768; //platform.width();
-            //this.splitToLines();
-            //var spanText=document.getElementById("spanText");
-            //spanText.style.display="none";
-            //console.log("File-Content: "+ JSON.stringify(textArea.innerText));//JSON.stringify(content));
-            //var textTest=String(textArea.innerHTML);
-            //console.log("this.getTextWidth(test) "+this.getTextWidth("alpha"));
         });
     }
     HomePage.prototype.getTextOfFile = function (currentUrl) {
@@ -122,23 +111,14 @@ var HomePage = /** @class */ (function () {
         currentUrl = currentUrl.replace("/private", "file://");
         var path = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
         var file = currentUrl.substring(currentUrl.lastIndexOf('/') + 1, currentUrl.length);
-        console.log("currentUrl2= ");
-        console.log("path= " + path);
-        console.log("file= " + file);
         this.file.readAsBinaryString(path, file)
             .then(function (content) {
             currentUrl = content + ''; //JSON.stringify();
-            //not going in here.
-            //currentUrl = currentUrl.replace(/\r?\n/g, '');
             console.log("File-Content: " + currentUrl); //JSON.stringify(content));
-            //var textArea=document.getElementById("textArea");
-            //textArea.innerText=currentUrl;      
-            //console.log("File-Content: "+ JSON.stringify(textArea.innerText));//JSON.stringify(content));
             _this.splitLines(currentUrl);
         })
             .catch(function (err) {
             console.log('err2= ' + JSON.stringify(err));
-            //alert(JSON.stringify(err));
         });
     };
     HomePage.prototype.replaceBigItems = function () {
@@ -153,11 +133,9 @@ var HomePage = /** @class */ (function () {
                 this.linesArray.splice(i + 1, 0, thisLine2);
             }
         }
-        //console.log("this.linesarray= "+this.linesArray);
     };
     HomePage.prototype.splitLinesArray = function (text) {
         if (text === void 0) { text = ''; }
-        // \cf
         var startPos = text.indexOf("\cf");
         text = text.slice(startPos + 3);
         this.linesArray = text.split("\n");
@@ -166,24 +144,10 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.splitLines = function (text) {
         var _this = this;
         if (text === void 0) { text = ''; }
-        console.log("textTest " + text);
         this.splitLinesArray(text);
         setTimeout(function () {
             _this.replaceBigItems();
         }, 2000);
-        //.then(()=>{
-        //console.log("hei1");
-        //this.replaceBigItems();
-        //})
-        //.catch(err=>{
-        //console.log('err2= '+JSON.stringify(err));
-        //}); 
-    };
-    HomePage.prototype.splitToLines = function (textContent) {
-        //var textArea=document.getElementById("textArea");
-        //this.linesArray = String(textArea.innerHTML).split("\n");
-        if (textContent === void 0) { textContent = ''; }
-        console.log("linesarray= " + this.linesArray);
     };
     HomePage.prototype.getTextWidth = function (text) {
         var spanTest = document.getElementById("spanText");
@@ -218,31 +182,6 @@ var HomePage = /** @class */ (function () {
     return HomePage;
 }());
 
-//this.platform.ready().then(() => {
-//});
-/**this.filePath.resolveNativePath(currentUrl).then(
-        resolvedFilePath => {
-
-        let path = resolvedFilePath.substring(0,
-          resolvedFilePath.lastIndexOf('/'));
-        let file = resolvedFilePath.substring(
-          resolvedFilePath.lastIndexOf('/')+1,
-        resolvedFilePath.length);
-        //this.readCsvData(path, file)
-        alert("BINGO!!!");
-        //this.file.readAsBinaryString(path, file)
-        //.then(content=>{
-          //console.log("File-Content: "+ JSON.stringify(content));
-        //})
-        //.catch(err=>{
-          //console.log(err);
-          //alert(JSON.stringify(err));
-        //});
-        
-      }).catch(err => {
-        alert(JSON.stringify(err));
-      });
-   */
 
 
 /***/ })

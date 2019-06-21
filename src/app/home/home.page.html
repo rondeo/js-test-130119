@@ -6,8 +6,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div>
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+     
+     <div>
   <button class="buttonOnTop"
   (click)="this.chooseFile()"
   >
@@ -23,16 +26,16 @@
   >RGB</button>
   </div>
 
-  <textarea id="textArea"
-  wrap="soft"
-  rows="20" 
-  cols="20" 
-  class="textAreaClass"> 
-
-</textarea>
 <div id="spanText">spanText</div>
 
-    
+<div fxFlex >
+  <mat-card>
+      <p>”HERE”
+      </p>
+  </mat-card>
+</div>
+
+
 <div >
 
 <p *ngFor="let line of this.linesArray; let i = index">
@@ -65,4 +68,4 @@
 
 </div>
 
-</ion-content>
+</div>
