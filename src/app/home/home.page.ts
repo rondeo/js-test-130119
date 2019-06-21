@@ -81,12 +81,15 @@ export class HomePage {
   }
 
     changeColorModeToRG(){
+      console.log("changeColorModeToRG");
       this.twoOrThreeFlag=1;
     }
     changeColorModeToRGB(){
+      console.log("changeColorModeToRGB");
       this.twoOrThreeFlag=2;
     }
     chooseFile(){
+      console.log("chooseFile");
       this.filePicker.pickFile()
       .then(uri =>{
         console.log("uri= "+uri);

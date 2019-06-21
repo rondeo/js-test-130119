@@ -16,6 +16,7 @@ import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule, MatSidenavModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
+import { MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +25,7 @@ import { MatToolbarModule } from '@angular/material';
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
+    MatIconModule,
     MatTabsModule,
     MatSidenavModule,
     BrowserAnimationsModule,
@@ -38,6 +40,7 @@ import { MatToolbarModule } from '@angular/material';
   exports: [
     MatTabsModule,
     MatSidenavModule,
+    MatIconModule,
     MatCardModule,
     MatToolbarModule
   ],

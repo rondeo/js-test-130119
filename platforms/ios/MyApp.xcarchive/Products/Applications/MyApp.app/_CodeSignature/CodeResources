@@ -14,11 +14,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		uTxuCPm3URiFm0DAB/XxqzFkKKc=
+		RHpuiNB1O3HwxOO5MErehJ6lIxo=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		f1wjUG+UR/4sRg+8Dmik2xD1Scs=
+		nB6lZXiVp5RRIsnHqwPNWZELoUY=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		W/XdVZZGWymMboNKRYIMb6BYPFQ=
+		rUi3nqixvTTB1ZxmcA6jG6T8Hkg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		06DpjoOocIoq7oSvyjJGGsEFFKc=
+		1YzLu8pbiLl54uC/J5du4E3LiEs=
 		</data>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		+OvsXt+04cZ9bvJ5yjI6jMxazDs=
+		im9sQdTE9EKo2fEGXEy6U9fxwJY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -1558,11 +1558,11 @@
 		</data>
 		<key>www/home-home-module.js</key>
 		<data>
-		jfVPoIax7kQQtHc1O4Uy4M4XwYw=
+		Gy0RoYPL8kOvBbx+4zC0YfWPp2g=
 		</data>
 		<key>www/home-home-module.js.map</key>
 		<data>
-		9Q6Tzcd0eIm72yi1RBzPy9VN1sk=
+		zz0XioCx1BBPSVX3SNA1NPT3eSE=
 		</data>
 		<key>www/index.html</key>
 		<data>
@@ -1570,11 +1570,11 @@
 		</data>
 		<key>www/main.js</key>
 		<data>
-		vWpnSB4KdaZ2RYMkNVbgeg1xtY4=
+		E4h07nXLC0qAHRke8fjh7OwUh/0=
 		</data>
 		<key>www/main.js.map</key>
 		<data>
-		c6WM+RHy9ecKqCkuC4L2Zm8tKWs=
+		JzQNMY2JQyTbjTtjstw8j4ua6GQ=
 		</data>
 		<key>www/plugins/cordova-plugin-device/www/device.js</key>
 		<data>
@@ -1710,11 +1710,11 @@
 		</data>
 		<key>www/styles.js</key>
 		<data>
-		b4E8D8C/qGk9kY0TPYnPrfkILdU=
+		NdCl1U3xrqUuJAQ3NIC6ND6b7eA=
 		</data>
 		<key>www/styles.js.map</key>
 		<data>
-		UTHGK9B72MsLs6uuoVXaajAF3pk=
+		drUPSs/eOtEZ+UJM7z8u4cr4dlY=
 		</data>
 		<key>www/svg/ios-add-circle-outline.svg</key>
 		<data>
@@ -4502,11 +4502,11 @@
 		</data>
 		<key>www/vendor.js</key>
 		<data>
-		FRAsh5WBOPmVUmM/M/swsnBfJr0=
+		+TdX2psSqAifva1c5bDcmIWL5jI=
 		</data>
 		<key>www/vendor.js.map</key>
 		<data>
-		OEstWTeN7AAE0mkB6Ug7BFJNnUc=
+		3FeGbX81PCYK/syrxjzYdbthhTs=
 		</data>
 		<key>www/wk-plugin.js</key>
 		<data>
@@ -4533,14 +4533,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aV12vLY3uS6leKLFnSsIsTfT0xaXVJTtSwZ5V3RSw9A=
+			4LHIE9AwMe01mKPkSM3HYglPJZErQtWqygurhqLLEb8=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vD/k+wchiH1ckqSUyyp+xNEFtrVxqmFdsoh7sJI2FCs=
+			XSrU8k6pu6PUPRBJomZ86ru5cGpBUKBLs45duvuFS/k=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -4554,7 +4554,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHyEsbcEpG2RphN4XJFdqbm1HdErDWn1Sxt5CiMjcOI=
+			sCmdU90JzoLab0pWEieOau4URFrJtKRx0L240VeaAe8=
 			</data>
 		</dict>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
@@ -4687,7 +4687,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2ptYflYPI7iMD8wIKmORtEhbUZJSq0xJWJ/C0Bhleso=
+			XnSDj720uQkDui6BXsYtFV4FQlBdQBphEVPzV93zEsQ=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -7221,14 +7221,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ks8kc38ukdby7QQNktRjEmomAWFmoxUdTxOX4j9/mV0=
+			PEgHYBfKMz2sd/9K52CFh1+OE5cvfF0iXQGL5HSDTmo=
 			</data>
 		</dict>
 		<key>www/home-home-module.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			chvzeizm/Y9A2RBIwukvN4pQDf9PGnOP7j8GoX0viN4=
+			JgHV1kh8yyKN+4rTdZcIQNiYMOa+l3OLVD/OFwiURlc=
 			</data>
 		</dict>
 		<key>www/index.html</key>
@@ -7242,14 +7242,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Co3QT6jzIXZCfzZ36Qi/8j+qijvVU08R9PMLGRxWwuc=
+			jMXAuhwN9iy4w696tSordhYxpHyZeS6aOcktgoRdrkM=
 			</data>
 		</dict>
 		<key>www/main.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P4WaMvb9uw/3S0lkIVl/t9/DwwxoJ/a8UcuAD+HacHg=
+			iebo7/DaJVI8AOAuTH9ugRBXlfhp69bhFbc/XMlf93Y=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-device/www/device.js</key>
@@ -7487,14 +7487,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			13YowoFtjkXjjIqsYevDtCHQPIKcmwMIoPW05Wyt/hc=
+			pvGas/WY9A+mUT+kLyXAXUdjVbrBVnADjSG1lZ73GzE=
 			</data>
 		</dict>
 		<key>www/styles.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZYyGlZQrEj7zFR1MLzXGfW3gDsGLtkzsgennAIDVAWo=
+			HJ/7c4DbN6k1+zoXXFu29z4zR0Fs8iGXxC3EY94Dqjg=
 			</data>
 		</dict>
 		<key>www/svg/ios-add-circle-outline.svg</key>
@@ -12373,14 +12373,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lXYUfCLdcyZPukylA5VeTzr7av5jYSlCo9wPhx9YEvY=
+			/MG94DutqPSqQOnc6vLpoVvKQcd8uHs3p5m1J1wemr8=
 			</data>
 		</dict>
 		<key>www/vendor.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ujhgi2F9WxF+ju2DQu4CVR6+XcL3Ix+pzT50OCbWKU=
+			quL8PD94M7/ZWgWWUboqNnbcazX46BrnVDJqpLeZTlk=
 			</data>
 		</dict>
 		<key>www/wk-plugin.js</key>

@@ -57,7 +57,7 @@ var HomePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<div class=\"container\"\n     fxLayout=\"column\"\n     fxLayoutGap=\"10px\">\n     \n     <div>\n  <button class=\"buttonOnTop\"\n  (click)=\"this.chooseFile()\"\n  >\n  <ion-icon name=\"open\"></ion-icon>\n</button>\n\n<button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRG()\"\n  >RG</button>\n\n  <button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRGB()\"\n  >RGB</button>\n  </div>\n\n<div id=\"spanText\">spanText</div>\n\n<div fxFlex >\n  <mat-card>\n    <mat-card-header>\n    </mat-card-header>\n    <mat-card-content>\n      <p>”HERE”\n      </p>\n    </mat-card-content>\n  </mat-card>\n</div>\n</div>\n\n\n<div >\n\n<p *ngFor=\"let line of this.linesArray; let i = index\">\n    \n    <span *ngIf=\"this.twoOrThreeFlag==0\">\n        {{line}} \n   </span>\n \n  \n  <span *ngIf=\"this.twoOrThreeFlag==1\" [ngSwitch]=\"(i+1)%2\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n    </span>\n\n\n\n\n\n    <span *ngIf=\"this.twoOrThreeFlag==2\" [ngSwitch]=\"(i+1)%3\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n          <span *ngSwitchCase=\"'2'\" style = \"color:blue\">  {{line}} \n            </span>\n    </span>\n</p>\n\n</div>\n\n</div>\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<div class=\"container\"\n     fxLayout=\"column\"\n     fxLayoutGap=\"10px\">\n     \n     <div id=\"buttonsDiv\">\n  <button class=\"buttonOnTop\"\n  (click)=\"this.chooseFile()\"\n  >\n  <ion-icon name=\"open\"></ion-icon>\n</button>\n\n<button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRG()\"\n  >RG</button>\n\n  <button class=\"buttonOnTop\"\n  (click)=\"this.changeColorModeToRGB()\"\n  >RGB</button>\n  </div>\n\n<div id=\"spanText\">spanText</div>\n\n\n\n\n<div >\n\n<p *ngFor=\"let line of this.linesArray; let i = index\">\n    \n    <span *ngIf=\"this.twoOrThreeFlag==0\">\n        {{line}} \n   </span>\n \n  \n  <span *ngIf=\"this.twoOrThreeFlag==1\" [ngSwitch]=\"(i+1)%2\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n    </span>\n\n\n\n\n\n    <span *ngIf=\"this.twoOrThreeFlag==2\" [ngSwitch]=\"(i+1)%3\">\n        <span *ngSwitchCase=\"'0'\" style = \"color:red\">  {{line}} \n          </span>\n        <span *ngSwitchCase=\"'1'\" style = \"color:green\">  {{line}} \n          </span>\n          <span *ngSwitchCase=\"'2'\" style = \"color:blue\">  {{line}} \n            </span>\n    </span>\n</p>\n\n</div>\n\n</div>\n"
 
 /***/ }),
 
@@ -68,7 +68,7 @@ module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Ionic Bl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".buttonOnTop {\n  background-color: blue;\n  color: yellow;\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  font-size: 20pt; }\n\n.textAreaClass {\n  background-color: blue;\n  color: yellow; }\n\n#spanText {\n  position: absolute;\n  visibility: hidden;\n  height: auto;\n  width: auto;\n  white-space: nowrap;\n  /* Thanks to Herb Caudill comment */ }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aF9rZXJ0c2FsaXMvQWxsSW9uaWNQcm9qZWN0cy9EeXNFZGl0b3Ivc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksc0JBQXNCO0VBQ3RCLGFBQWE7RUFDYixZQUFZO0VBQ1osYUFBYTtFQUNiLFlBQVk7RUFDWixlQUFlLEVBQUE7O0FBRW5CO0VBQ0ksc0JBQXNCO0VBQ3RCLGFBQWEsRUFBQTs7QUFHakI7RUFFSSxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixXQUFXO0VBQ1gsbUJBQW1CO0VBQUUsbUNBQUEsRUFBb0MiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ1dHRvbk9uVG9we1xuICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XG4gICAgY29sb3I6IHllbGxvdztcbiAgICB3aWR0aDogMTAwcHg7XG4gICAgaGVpZ2h0OiAxMDBweDtcbiAgICBtYXJnaW46IDUwcHg7XG4gICAgZm9udC1zaXplOiAyMHB0O1xufVxuLnRleHRBcmVhQ2xhc3N7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmx1ZTtcbiAgICBjb2xvcjogeWVsbG93O1xuXG59XG4jc3BhblRleHRcbntcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICAgIGhlaWdodDogYXV0bztcbiAgICB3aWR0aDogYXV0bztcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwOyAvKiBUaGFua3MgdG8gSGVyYiBDYXVkaWxsIGNvbW1lbnQgKi9cbn1cbiJdfQ== */"
+module.exports = ".buttonOnTop {\n  background-color: blue;\n  color: yellow;\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  font-size: 20pt; }\n\n.buttonsDiv {\n  position: relative;\n  top: 0%; }\n\n#spanText {\n  position: absolute;\n  visibility: hidden;\n  height: auto;\n  width: auto;\n  white-space: nowrap;\n  /* Thanks to Herb Caudill comment */ }\n\n.homeMaster {\n  background-color: green; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aF9rZXJ0c2FsaXMvQWxsSW9uaWNQcm9qZWN0cy9EeXNFZGl0b3Ivc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksc0JBQXNCO0VBQ3RCLGFBQWE7RUFDYixZQUFZO0VBQ1osYUFBYTtFQUNiLFlBQVk7RUFDWixlQUFlLEVBQUE7O0FBRW5CO0VBQ0ksa0JBQWtCO0VBQ2xCLE9BQU8sRUFBQTs7QUFFWDtFQUVJLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFdBQVc7RUFDWCxtQkFBbUI7RUFBRSxtQ0FBQSxFQUFvQzs7QUFFN0Q7RUFDSSx1QkFBdUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uT25Ub3B7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmx1ZTtcbiAgICBjb2xvcjogeWVsbG93O1xuICAgIHdpZHRoOiAxMDBweDtcbiAgICBoZWlnaHQ6IDEwMHB4O1xuICAgIG1hcmdpbjogNTBweDtcbiAgICBmb250LXNpemU6IDIwcHQ7XG59XG4uYnV0dG9uc0RpdntcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgdG9wOiAwJTtcbn1cbiNzcGFuVGV4dFxue1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgaGVpZ2h0OiBhdXRvO1xuICAgIHdpZHRoOiBhdXRvO1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7IC8qIFRoYW5rcyB0byBIZXJiIENhdWRpbGwgY29tbWVudCAqL1xufVxuLmhvbWVNYXN0ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZWVuO1xuICB9Il19 */"
 
 /***/ }),
 
@@ -111,7 +111,7 @@ var HomePage = /** @class */ (function () {
         currentUrl = currentUrl.replace("/private", "file://");
         var path = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
         var file = currentUrl.substring(currentUrl.lastIndexOf('/') + 1, currentUrl.length);
-        this.file.readAsBinaryString(path, file)
+        this.file.readAsText(path, file)
             .then(function (content) {
             currentUrl = content + ''; //JSON.stringify();
             console.log("File-Content: " + currentUrl); //JSON.stringify(content));
@@ -155,13 +155,16 @@ var HomePage = /** @class */ (function () {
         return spanTest.clientWidth;
     };
     HomePage.prototype.changeColorModeToRG = function () {
+        console.log("changeColorModeToRG");
         this.twoOrThreeFlag = 1;
     };
     HomePage.prototype.changeColorModeToRGB = function () {
+        console.log("changeColorModeToRGB");
         this.twoOrThreeFlag = 2;
     };
     HomePage.prototype.chooseFile = function () {
         var _this = this;
+        console.log("chooseFile");
         this.filePicker.pickFile()
             .then(function (uri) {
             console.log("uri= " + uri);
